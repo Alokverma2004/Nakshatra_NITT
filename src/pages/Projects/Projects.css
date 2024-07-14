@@ -1,0 +1,55 @@
+#projects {
+   /* height: 100vh;
+   overflow-x: hidden;
+   display: flex;
+   flex-direction: column;
+   align-items: center; */
+
+   width: 100%;
+   padding: 32px 0px;
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   row-gap: 32px;
+}
+
+#projects > h1 {
+   color: #5643fd;
+   font: 600 4rem "Poppins", sans-serif;
+   margin: 0px;
+   /*removingdefaultheadermargin*/animation: 2.5s ease 0s infinite normal levitate;
+   -webkit-animation: 2.5s ease 0s infinite normal levitate;
+}
+
+#projects > p {
+   width: 60%;
+   color: #f5f3ce;
+   font: 400 1.4rem "Poppins", sans-serif;
+   margin: 0px; /* removing default p margin */
+   padding: 32px;
+   border-radius: 24px;
+   text-align: justify;
+}
+.projecthardware,.projectsoftware, .projecttelescope{
+   color: #f5f3ce;
+   font-size: 2.8rem;
+}
+
+@media (max-width: 475px) {
+   #projects > h1 {
+      font-size: 2.8rem;
+   }
+
+   #projects > p {
+      width: 90%;
+      padding: 24px;
+      font-size: 1rem;
+   }
+}
+
+@media (max-width: 300px) {
+   #projects > h1 {
+      font-size: 2.5rem;
+   }
+}

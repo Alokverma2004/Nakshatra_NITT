@@ -1,0 +1,40 @@
+#events {
+   width: 100%;
+   padding: 32px 0px;
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   row-gap: 32px;
+}
+
+#events>h1 {
+   color: #5643fd;
+   font: 600 4rem "Poppins", sans-serif;
+   margin: 0px;
+   /* removing default header margin */
+   animation: 2.5s ease 0s infinite normal levitate;
+}
+
+#events-cards-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   column-gap: 8%;
+}
+
+#events-cards-container>.card-main {
+   cursor: pointer;
+}
+
+
+@media (max-width: 475px) {
+   #events>h1 {
+      font-size: 3rem;
+   }
+
+   #events-cards-container {
+      flex-direction: column;
+      row-gap: 48px;
+   }
+}

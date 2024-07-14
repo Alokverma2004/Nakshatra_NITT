@@ -1,0 +1,72 @@
+@keyframes pulse {
+   0% {
+      box-shadow: 0 0 0 2rem rgba(255, 255, 255, 0.05),
+         0 0 0 3.5rem rgba(255, 255, 255, 0.05),
+         0 0 0 4.5rem rgba(255, 255, 255, 0.05);
+   }
+
+   50% {
+      box-shadow: 0 0 0 1.5rem rgba(255, 255, 255, 0.05),
+         0 0 0 3rem rgba(255, 255, 255, 0.05),
+         0 0 0 4rem rgba(255, 255, 255, 0.05);
+   }
+
+   100% {
+      box-shadow: 0 0 0 2rem rgba(255, 255, 255, 0.05),
+         0 0 0 3.5rem rgba(255, 255, 255, 0.05),
+         0 0 0 4.5rem rgba(255, 255, 255, 0.05);
+   }
+}
+
+/* In mobile design, the moon is placed at the
+top, with part of its south exposed. But this 
+caused an overflow in x direction as the moon 
+wasn't contained. A solution to this is to nest 
+the moon inside a parent container and prevent 
+that overflow */
+.moon-container {
+   /* since moon is positioned absolutely, the 
+   container should also be position absolutely */
+   width: 55rem; /* size of moon + its shadow */
+   height: 55rem;
+   position: absolute;
+   top: 50%;
+   transform: translate(
+      calc(-50% + 2.5rem),
+      calc(-50% + 2.5rem)
+   ); /* 2.5 was hardcoded for best look */
+   overflow: hidden;
+}
+
+.moon {
+   background: #f5f3ce;
+   height: 50rem;
+   width: 50rem;
+   border-radius: 50%;
+   box-shadow: 0 0 0 2rem rgba(255, 255, 255, 0.05),
+      0 0 0 3.5rem rgba(255, 255, 255, 0.05),
+      0 0 0 4.5rem rgba(255, 255, 255, 0.05);
+   animation: pulse 3.5s ease-in infinite;
+}
+
+.moon:after {
+   position: relative;
+   content: "";
+   display: block;
+   background-color: #d9d8c5;
+   height: 4.5rem;
+   width: 4.5rem;
+   border-radius: 100%;
+   top: 15rem;
+   left: 30rem;
+   box-shadow: 0.9em -6.1em 0 0.5em #d9d8c5, 1.1em -6.1em 0 0.6em #c4c2a5,
+      4.8em -2em 0 -0.45em #d9d8c5, 5em -2em 0 -0.42em #c4c2a5;
+}
+
+@media (max-width: 475px) {
+   .moon-container {
+      width: 100%;
+      top: -42rem; /* hardcoded for best look */
+      transform: translate(0, 0);
+   }
+}

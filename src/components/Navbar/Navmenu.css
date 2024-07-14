@@ -1,0 +1,31 @@
+.navmenu {
+   background: #f5f3ce;
+   width: 100vw;
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   row-gap: 80px;
+
+   position: absolute;
+   top: -100vh;
+   left: 0px;
+   z-index: 2;
+
+   transition: top 1s ease;
+}
+
+.navmenu > a {
+   font: 800 1.1rem "Inter", sans-serif;
+   color: #5643fd;
+   text-decoration: none;
+}
+
+.menu-drop-animation {
+   top: 0px;
+}
+
+.reverse-menu-drop-animation {
+   top: -100vh;
+}

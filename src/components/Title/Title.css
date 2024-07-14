@@ -1,0 +1,145 @@
+@keyframes rocket-landing {
+   0% {
+      transform: translateX(100vw) rotate(360deg);
+   }
+
+   100% {
+      transform: translateX(0px) rotate(0deg);
+   }
+}
+
+@keyframes fade {
+   from {
+      opacity: 0%;
+   }
+
+   to {
+      opacity: 100%;
+   }
+}
+
+@keyframes levitate {
+   0% {
+      transform: translateY(0px);
+   }
+
+   25% {
+      transform: translateY(8px);
+   }
+
+   50% {
+      transform: translateY(0px);
+   }
+
+   75% {
+      transform: translateY(-8px);
+   }
+
+   100% {
+      transform: translateY(0px);
+   }
+}
+
+.title-main {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: calc(100% - 25rem);
+   /* the container shouldn't overflow in x direction */
+   position: relative;
+   left: 25rem;
+   /* moon occupies approx 25rem space on left, so we shift */
+   flex-grow: 1;
+   /* will occupy remnant space in landing page */
+}
+
+.title-container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   animation: fade 1s;
+}
+
+.title-container > h1 {
+   margin: 0px;
+   font: 600 6.25rem "Poppins", sans-serif;
+   color: #5643fd;
+   animation: 2.5s ease 0s infinite normal levitate;
+}
+
+.title-container > p {
+   margin: 0px;
+   font: 200 1.75rem "Inter", sans-serif;
+   text-transform: uppercase;
+   color: #f5f3ce;
+
+   position: relative;
+   top: -32px;
+
+   animation: 2.5s ease 0s infinite normal levitate;
+}
+
+.join-btn {
+   align-self: center;
+   font: 500 1.2rem "Poppins", sans-serif;
+   text-transform: uppercase;
+   padding: 8px 28px;
+   color: #f5f3ce;
+   background: #5643fd;
+   outline: none;
+   border: 0px;
+   border-radius: 32px;
+   transition: padding 0.5s;
+}
+
+.join-btn:hover {
+   font: 800 1.2rem "Poppins", sans-serif;
+   padding: 12px 32px;
+   color: #5643fd;
+   background: #f5f3ce;
+   cursor: pointer;
+}
+
+.nakshatra-logo {
+   width: 180px;
+   animation: 2.5s ease 0s infinite normal levitate;
+}
+
+.rocket {
+   width: 180px;
+   animation: rocket-landing 2s;
+}
+
+.title-visible {
+   display: flex;
+}
+
+.title-not-visible {
+   display: none;
+}
+
+@media (max-width: 475px) {
+   .title-main {
+      width: 100vw;
+      left: 0;
+   }
+
+   .nakshatra-logo,
+   .rocket {
+      width: 120px;
+   }
+
+   .title-container > h1 {
+      font-size: 3.2rem;
+   }
+
+   .title-container > p {
+      font-size: 0.9rem;
+      top: -16px;
+   }
+
+   .join-btn {
+      font-size: 1rem;
+      padding: 8px 20px;
+   }
+}
