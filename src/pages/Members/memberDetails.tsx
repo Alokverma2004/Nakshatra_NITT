@@ -1,37 +1,37 @@
-import dhruva from "../../assets/images/members/hema.png"
-import krishnadas from "../../assets/images/members/sarayu.jpg"
-// import nishanth from "../../assets/images/members/nishanth.png"
-// import karna from "../../assets/images/members/karna.png"
-// import harshith from "../../assets/images/members/harshith.png"
-import nishanth from "../../assets/images/members/keshav.jpg"
-import karna from "../../assets/images/members/harish.jpg"
+import hema from "../../assets/images/members/hema.png"
+import sarayu from "../../assets/images/members/sarayu.jpg"
+import arun from "../../assets/images/members/arun.jpg"
+import keshav from "../../assets/images/members/keshav.jpg"
+import harish from "../../assets/images/members/harish.jpg"
 
 
 
 export const membersDetails = [
    {
-      imgPath: krishnadas,
-      name: "sarayu",
+      imgPath: sarayu,
+      name: "Sarayu",
       position: `Treasurer`,
    },
+   
    {
-      imgPath: dhruva,
+      imgPath: keshav,
+      name: "Keshav Kabra",
+      position: `Overall coordinator`,
+   },
+   {
+      imgPath: harish,
+      name: "Harish S",
+      position: `President`,
+   },
+   {
+      imgPath: arun,
+      name: "Arunangshu",
+      position: `Software Head`,
+   },
+   {
+      imgPath: hema,
       name: "Hemadharini",
       position: `General Secretary`,
    },
-   // {
-   //    imgPath: harshith,
-   //    name: "Harshith",
-   //    position: `President`,
-   // },
-   {
-      imgPath: nishanth,
-      name: "Keshav",
-      position: `Over all coordinator`,
-   },
-   {
-      imgPath: karna,
-      name: "Harish",
-      position: `President`,
-   },
+   
 ];
