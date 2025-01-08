@@ -9,26 +9,28 @@
 
 #members > h1 {
    color: #5643fd;
-   font: 600 4rem "Poppins", sans-serif;
+   font: 600 3rem "Poppins", sans-serif;
    margin: 0px;
-   /* removing default header margin */
    animation: 2.5s ease 0s infinite normal levitate;
 }
 
 #members-cards-container {
-   display: flex;
+   display: flex
+;
    justify-content: center;
-   align-items: center;
-   column-gap: 8%;
-   width: 90%;
+   /* align-items: center; */
+   column-gap: 5%;
+   width: 93%;
 }
 
 #members-cards-container > .card-main > img {
-   width: 80%;
-   aspect-ratio: 1;
-   border-radius: 50%;
-   align-self: center;
-   margin-bottom: 16px;
+   width: 81%;
+    height: auto;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    align-self: center;
+    padding: 5px;
+    margin-bottom: 18px;
 }
 
 #members-cards-container > .card-main > .card-text {
@@ -45,4 +47,12 @@
       flex-direction: column;
       row-gap: 48px;
    }
+}
+.linkedin-link {
+   color: #bbe585; 
+   text-decoration: none;
+}
+
+.linkedin-link:hover {
+   text-decoration: underline;
 }

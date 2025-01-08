@@ -1,50 +1,123 @@
-#achievements {
+#newsletter {
    width: 100%;
    padding: 32px 0px;
-
+   background-color: transparent;
    display: flex;
    flex-direction: column;
    align-items: center;
    row-gap: 32px;
-}
-
-#achievements > h1 {
+ }
+ #newsletter-heading{
    color: #5643fd;
-   font: 600 4rem "Poppins", sans-serif;
+   font: 600 3rem "Poppins", sans-serif;
    margin: 0px;
-   /* removing default header margin */
    animation: 2.5s ease 0s infinite normal levitate;
-}
-
-#achievements > ul {
-   width: 60%;
+ }
+ .magazine-container {
+   max-width: 1180px;
+   width: 75%;
+   margin: 0 auto;
+   padding: 1rem;
+   background-color: rgba(46, 23, 240, 0.25);
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   border-radius: 0.5rem;
+ }
+ 
+ .magazine-grid {
+   display: grid;
+   grid-template-columns: 1fr;
+   gap: 2rem;
+ }
+ 
+ @media (min-width: 768px) {
+   .magazine-grid {
+     grid-template-columns: 1fr 1fr;
+   }
+ }
+ 
+ .image-wrapper {
+   aspect-ratio: 1;
+   background-color: rgba(46, 23, 240, 0.25);
+   border-radius: 0.5rem;
+ }
+ 
+ .magazine-image {
+   width: 500px;
+   height: 100%;
+   object-fit: cover;
+   object-position: center;
+   display: block;
+   transition: transform 0.3s ease;
+ }
+ .image-container {
+   flex: 1 1;
+   background-color: #f3f4f6;
+   border-radius: 6px;
+   background-color: #0e0b6800;
+   height: auto;
+ }
+ .image-container img {
+   width: 100%;
+   max-width: 556px;
+   height: auto;
+   background-color: currentcolor;
+   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+ }
+ .content-container {
+   display: flex;
+   flex-direction: column;
+ }
+ 
+ .magazine-heading {
+   font-size: 2rem;
+   font-weight: 700;
+   color: #bbe585;
+   margin: 0;
+ }
+ 
+ .magazine-content {
    color: #f5f3ce;
-   font: 400 1.3rem "Poppins", sans-serif;
-   /* removing default margin */
-   margin: 0px; 
-   padding: 32px;
-   border-radius: 24px;
+   font: 500 1em "Poppins", sans-serif;
+   line-height: 1.5;
    text-align: justify;
-}
-
-#achievements > ul > li {
-   list-style: none;
-}
-
-@media (max-width: 475px) {
-   #achievements > h1 {
-      font-size: 2.4rem;
-   }
-
-   #achievements > ul {
-      width: 90%;
-      padding: 24px;
-      font-size: 0.8rem;
-   }
-}
-
-@media (max-width: 300px) {
-   #achievements > h1 {
-      font-size: 2rem;
-   }
-}
+ }
+ 
+ .magazine-content p {
+   margin-bottom: .5rem;
+ }
+ 
+ .magazine-content .note {
+   margin-top: 1rem;
+ }
+ 
+ .button-container {
+   display: flex;
+   gap: 1rem;
+   margin-top: 1rem;
+ }
+ 
+ .button {
+   padding: 0.75rem 1.5rem;
+   border-radius: 0.5rem;
+   text-decoration: none;
+   font-weight: 500;
+   transition: background-color 0.2s;
+ }
+ 
+ .primary-button {
+   background-color: #3b63b9;
+   color: white;
+ }
+ 
+ .primary-button:hover {
+   background-color: #4064c5;
+ }
+ 
+ .secondary-button {
+   background-color: #4b5563;
+   color: white;
+ }
+ 
+ .secondary-button:hover {
+   background-color: #374151;
+ }

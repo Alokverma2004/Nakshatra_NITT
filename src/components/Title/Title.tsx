@@ -27,7 +27,6 @@ function Title() {
             <img src={logo} alt="not supported" className="nakshatra-logo" />
             <h1>Nakshatra</h1>
             <p>The astronomy and science club of nitt</p>
-            <button className="join-btn">Join</button>
          </div>
       </div>
    );

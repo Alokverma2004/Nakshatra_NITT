@@ -1,55 +1,205 @@
 #projects {
-   /* height: 100vh;
-   overflow-x: hidden;
-   display: flex;
-   flex-direction: column;
-   align-items: center; */
+  width: 100%;
+  padding: 32px 0px;
 
-   width: 100%;
-   padding: 32px 0px;
-
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   row-gap: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 32px;
+}
+.wholecontainer{
+  background: rgba(86, 67, 253, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  border-radius: 12px;
+  -webkit-backdrop-filter: blur(7px);
+  max-width: 60%;
 }
 
+.layout-container {
+  display: flex;
+  gap: 24px;
+  padding: 16px;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.image-container {
+  flex: 1 1;
+  background-color: #f3f4f6;
+  border-radius: 6px;
+  height: auto;
+}
+
+.image-container img {
+  width: 80%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.text-content {
+  flex: 2;
+}
+
+.proheading {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  color: #95c9df;
+}
+
+.paragraph {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #666666;
+}
+
+/* Media query for mobile responsiveness */
+@media (max-width: 768px) {
+  .layout-container {
+    flex-direction: column;
+  }
+
+  .image-container,
+  .text-content {
+    max-width: 100%;
+  }
+}
+.pro{
+  display: flex;
+}
 #projects > h1 {
-   color: #5643fd;
-   font: 600 4rem "Poppins", sans-serif;
-   margin: 0px;
-   /*removingdefaultheadermargin*/animation: 2.5s ease 0s infinite normal levitate;
-   -webkit-animation: 2.5s ease 0s infinite normal levitate;
+  color: #5643fd;
+  font: 600 3.5rem "Poppins", sans-serif;
+  margin: 0px;
+  animation: 2.5s ease 0s infinite normal levitate;
+  -webkit-animation: 2.5s ease 0s infinite normal levitate;
 }
 
 #projects > p {
-   width: 60%;
-   color: #f5f3ce;
-   font: 400 1.3rem "Poppins", sans-serif;
-   margin: 0px; /* removing default p margin */
-   padding: 32px;
-   border-radius: 24px;
-   text-align: justify;
+  width: 60%;
+  color: #f5f3ce;
+  font: 400 1.3rem "Poppins", sans-serif;
+  margin: 0px; 
+  padding: 32px;
+  border-radius: 24px;
+  text-align: justify;
 }
 .projecthardware,.projectsoftware, .projecttelescope{
-   color: #f5f3ce;
-   font-size: 2.8rem;
+  color: #f5f3ce;
+  font-size: 2.8rem;
 }
 
 @media (max-width: 475px) {
-   #projects > h1 {
-      font-size: 2.8rem;
-   }
-
-   #projects > p {
-      width: 90%;
-      padding: 24px;
-      font-size: 1rem;
-   }
+  #projects > h1 {
+    font-size: 2rem;
+  }
+  .projecthardware,.projectsoftware, .projecttelescope{
+    color: #f5f3ce;
+    font-size: 2.8rem;
+  }
+  #projects > p {
+    width: 90%;
+    padding: 24px;
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 300px) {
-   #projects > h1 {
-      font-size: 2.5rem;
-   }
+  #projects > h1 {
+    font-size: 2rem;
+  }
+}
+
+
+.layout-container {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+}
+
+.image-container img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+.text-content {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.proheading {
+  display: flex;
+  font-size: 1.5em;
+  margin: 0px 0;
+  font-weight: 500;
+  color: #bbe585;
+  justify-content: center;
+}
+
+.paragraph {
+  font: 400 1.1em "Poppins", sans-serif;
+  line-height: 1.4;
+  text-align: justify;
+  color: #f5f3ce;
+  margin: 10px 0px 0px 10px;
+}
+
+.read-more-button {
+  font: 100 .85em "Poppins", sans-serif;
+  background-color: transparent;
+  color: #6abfed;
+  border: none;
+  cursor: pointer;
+  font-size: .85em;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.read-more-button:focus {
+  outline: none;
+}
+
+.layout-container {
+  display: flex;
+  gap: 24px;
+  padding: 11px;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.image-container img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.text-content {
+  text-align: left;
+}
+
+.wholecontainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.projecttelescope,
+.projecthardware,
+.projectsoftware {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #bbe585; 
+  margin: 0px 0 0px;
+  display: block;
 }

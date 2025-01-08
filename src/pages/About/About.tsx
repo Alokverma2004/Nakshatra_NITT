@@ -1,20 +1,11 @@
 import "./About.css";
-
 export const About = () => {
    return (
       <div id="about">
          <h1>About us</h1>
          <p className="glassmorphism">
-            Nakshatra is the official Astronomy and Science club at National
-            Institute of Technology, Trichy (NITT). We are constantly on the
-            lookout for stargazing, simulations and blogging! From our flagship
-            festival, Stardust to our everyday debates, Nakshatra makes for an
-            amazing place to hang out with space enthusiasts. Our mission is to
-            create enthusiasm and delight in Astronomy and Science by conducting
-            various workshops and sky mapping sessions throughout the year.
-            This, combined with our blogs, helps us expand the reach of the
-            subject while simultaneously creating appreciation for the
-            scientists and engineers in the field.
+         Nakshatra, the official Astronomy and Science Club at the National Institute of Technology, Trichy, is a vibrant community for space enthusiasts and curious minds who share a fascination with the wonders of the cosmos. <br />
+         As one of the most active technical clubs on campus, Nakshatra serves as a platform for students to engage deeply with astronomy and space through a variety of hands-on projects, interactive discussions, and exciting events. Our mission is to bring the universe closer to everyone on campus, fueling a passion for exploration and discovery that transcends academics and exams.
          </p>
       </div>
    );

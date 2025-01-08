@@ -5,7 +5,7 @@ import { membersDetails } from "./memberDetails";
 export const Members = () => {
     return (
         <div id="members">
-            <h1>Meet our Core</h1>
+            <h1>Core Members</h1>
             <div id="members-cards-container">
                 {membersDetails.map((member) => (
                     <InfoCard
@@ -13,6 +13,8 @@ export const Members = () => {
                         imgPath={member.imgPath}
                         title={member.name}
                         content={member.position}
+                        isLinked={true} // Adding a new prop to enable LinkedIn behavior
+                        link={member.linkedin} // Pass LinkedIn link if needed
                     />
                 ))}
             </div>
