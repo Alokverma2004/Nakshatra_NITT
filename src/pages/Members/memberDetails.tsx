@@ -1,6 +1,6 @@
 import hema from "../../assets/images/members/hema.png";
 import sarayu from "../../assets/images/members/sarayu.jpg";
-import arun from "../../assets/images/members/arun.jpg";
+import arun from "../../assets/images/members/arungashu.jpg";
 // import keshav from "../../assets/images/members/keshav.jpg"
 import harish from "../../assets/images/members/harish_s.jpg";
 import ankur from "../../assets/images/members/ankur.jpg";
@@ -26,13 +26,13 @@ export const membersDetails = [
    },
    {
       imgPath: arun,
-      name: "Arunangshu",
-      position: `Technical Head`,
+      name: "Arunangshu das",
+      position: `Software Head`,
       linkedin: "https://www.linkedin.com/in/arunangshu-das-619252242/?trk=people-guest_people_search-card&originalSubdomain=in",
    },
    {
       imgPath: hema,
-      name: "Hemadharani",
+      name: "Hemadharani N",
       position: `General Secretary`,
       linkedin: "https://www.linkedin.com/in/hemadharani-n/?originalSubdomain=in",
    },
